@@ -1,16 +1,30 @@
-nums = [-1]
+def yie(iterable):
 
-l,r = 0, 0
-length = len(nums)
-result = []
-while r < length:
-	while r + 1 < length and nums[r+1] == nums[r]+1:
-		r += 1
-	
-	if l == r:
-		result.append(str(nums[l]))
-	else:
-		result.append(str(nums[l]) + "->" + str(nums[r]))
-	r += 1
-	l = r
-print(result)
+    for i in iterable:
+        jls_extract_var = "Double data gen"
+        print(jls_extract_var)
+
+        yield i*2
+
+
+def datagen():
+
+    l=[]
+
+    for i in range(10):
+        print("data")
+
+        l.append(i)
+
+    return l
+
+
+for i in datagen():
+
+    print(i, "datagrn")    
+    
+
+for i in yie(range(10)):
+    print(i)
+        
+        
