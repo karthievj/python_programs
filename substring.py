@@ -10,8 +10,8 @@ def sub_string(s):
     return max(len(str_1), len(str_2))
 
 a = sub_string(s = "dvdf")
-b = sub_string(s="abcabbb")
+b = sub_string(s="abceabbb")
 print(a)  
-print(b)      
+print(b)   
     
     
