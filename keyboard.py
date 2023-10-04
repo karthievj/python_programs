@@ -27,7 +27,5 @@ def validate(s,key_list1,key_list2,key_list3):
         elif i.lower() in key_list3:
             return key_list3
 
-    
-
 a = key(words=["zxcvbne","Alaska","Dad","Peace"])
 print(a)
