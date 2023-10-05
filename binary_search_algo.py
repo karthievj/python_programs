@@ -1,4 +1,4 @@
-import random,pprint
+import random
 
 #Populating a empty array with 200 values
 array_len = 200
@@ -21,7 +21,7 @@ print(f'Target to find is {target}')
 def binary_search(arr):
     start = 0
     end = len(arr) - 1
-    while start <=end:
+    while start <= end:
         #efficient way to find the middle or middle = start+end//2
         middle = start + ((end-start) //2)
         if target == arr[middle]:
