@@ -5,9 +5,9 @@ def count_digits(n):
         count += 1
     return count
 
-n=7785994
+n = int(input("Enter a number to check how many digits it had: "))
 c = count_digits(n)
-print("Number of digits present in {} is {}".format(n,c))
+print("{} is a {} digit number ".format(n,c))
 
 
 
