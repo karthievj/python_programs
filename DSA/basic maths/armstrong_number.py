@@ -9,7 +9,7 @@ def armstrong_number(n):
     msg = ""
     while n>0:
         last_digit = n%10    
-        sum = sum + (last_digit*last_digit*last_digit)
+        sum = sum + (last_digit*last_digit*last_dfigit)
         n=n//10
     if sum == dup:
         msg+= "{} is a armstrong number".format(dup)
